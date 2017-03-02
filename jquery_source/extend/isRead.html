@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>isReady属性</title>
+    <script src="../../lib/jquery-2.03.js"></script>
+</head>
+<body>
+<script>
+    var flag = $.isReady;
+    console.log(flag);//false
+
+    $(function(){
+       var f = $.isReady;
+        console.log(f);//true
+    });
+
+    window.onload = function(){
+        var ff = $.isReady;
+        console.log(ff);//true
+    }
+
+
+</script>
+</body>
+</html>
