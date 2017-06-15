@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    /*var m = class2type[toString.call([])];
+    console.log(m);*/
+
+
+
+
+
+    //判断具体的数据类型
+    function _type(obj){
+        if ( obj == null ) {
+            return String( obj );
+        }
+        var class2type = {
+            "[object Array]":"array",
+            "[object Boolean]":"boolean",
+            "[object Date]":"date",
+            "[object Error]":"error",
+            "[object Function]":"function",
+            "[object Number]":"number",
+            "[object Object]":"object",
+            "[object RegExp]":"regexp",
+            "[object String]":"string"
+        }
+        // Support: Safari <= 5.1 (functionish RegExp)
+        return typeof obj === "object" || typeof obj === "function" ? class2type[ core_toString.call(obj) ] || "object" : typeof obj;
+    }
+
+
+
+</script>
+</body>
+</html>

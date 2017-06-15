@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../lib/jquery-2.03.my.js"></script>
+</head>
+<body>
+<input value="1">
+<input value="2">
+<input value="3">
+<input value="4">
+<script>
+    var a = $("input").map(function(){
+
+    });
+
+    var m = Array.isArray($("input"));//ie9+
+    console.log(m);
+
+    var s = $.isPlainObject($("input"));
+    console.log(s);
+
+</script>
+</body>
+</html>
