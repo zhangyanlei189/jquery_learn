@@ -7,18 +7,32 @@
 </head>
 <body>
 <script>
-    var flag = $.isReady;
+    /*var flag = $.isReady;
     console.log(flag);//false
 
-    $(function(){
-       var f = $.isReady;
+    $(function () {
+        var f = $.isReady;
         console.log(f);//true
     });
 
-    window.onload = function(){
+    window.onload = function () {
         var ff = $.isReady;
         console.log(ff);//true
+    }*/
+
+
+    function g(s) {
+        var a = {}, t, r = /(?:([^&]+)=([^&]+))/g;
+        while ((t = r.exec(s)) != null) {
+            t[2] = decodeURIComponent(t[2]);
+            t[1] in a ? typeof(a[t[1]]) == "string" ? a[t[1]] = [a[t[1]], t[2]] : a[t[1]].push(t[2]) : a[t[1]] = t[2];
+        }
+        ;
+        return a;
     }
+
+    var ret = g("d=p&s=b&d=u2953581&w=300&h=250");
+    console.log(ret);
 
 
 </script>

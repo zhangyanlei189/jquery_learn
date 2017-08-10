@@ -1,0 +1,38 @@
+/* CSS Reset */
+html,body,iframe,div,span,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,a,strong,img,form,fieldset,legend,label{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}body{line-height:1;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}select,input,button{vertical-align:middle;}table{border-collapse:collapse;border-spacing:0;}html{zoom:expression(function(ele){ele.style.zoom="1";document.execCommand("BackgroundImageCache",false,true);}(this));}*html,*html body{background-image:url(about:blank);background-attachment:fixed;}
+
+/* Page */
+body{background:#F9F9F9;}
+#page_content{padding:10px 20px;margin:0 0 0 140px;}
+#page_content.tr_bar{margin:0;}
+#page_content .title{font:bold 14px/2 "Microsoft YaHei";color:#999;}
+#page_content .name{position:absolute;z-index:1;top:-12px;left:0;padding:1px 8px;border:1px solid #DDD;border-radius:12px;background:#DDD;font:12px/1.5 SimSun;color:#666;}
+#page_content .search{position:relative;z-index:0;margin:24px 0 0 0;padding:12px 0 0 50px;border-top:1px solid #DDD;font:12px/1.5 SimSun;color:#666;}
+#page_content .search input{margin:4px 0 0 0;height:18px;font:12px/1.5 SimSun;color:#666;vertical-align:baseline;}
+#page_content .search select{margin:4px 0 0 0;height:24px;font:12px/1.5 SimSun;color:#666;vertical-align:baseline;}
+#page_content .search button{margin:4px 0 0 0;height:24px;font:12px/1.5 SimSun;color:#666;vertical-align:baseline;}
+#page_content .data{position:relative;z-index:0;margin:24px 0 0 0;padding:12px 0 0 50px;border-top:1px solid #DDD;}
+#page_content .data table{border-right:20px solid #F9F9F9;background:#FFF;}
+#page_content .data table thead tr{background:#EEE;}
+#page_content .data table thead tr th{padding:6px;border:solid #DDD;border-width:1px 0;font:12px/1.5 SimSun;color:#666;cursor:default;white-space:nowrap;}
+#page_content .data table thead tr th.s{border-style:dashed;}
+#page_content .data table thead tr th.bl{border-left:1px solid #DDD;}
+#page_content .data table thead tr th a{display:inline-block;color:#666;border-bottom:1px dashed #999;text-decoration:none;}
+#page_content .data table thead tr th a:hover{color:#F60;border-bottom:1px solid #F60;}
+#page_content .data table tbody tr.o{background:#F7FCFF;}
+#page_content .data table tbody tr.h{background:#F1F5E8;}
+#page_content .data table tbody tr td{padding:6px 6px;border:solid #EEE;border-width:1px 0;font:12px/2 SimSun;color:#333;text-align:right;}
+#page_content .data table tbody tr td.s{border-style:dashed;white-space:nowrap;}
+#page_content .data table tbody tr td.bl{border-left:1px solid #EEE;}
+#page_content .data table tbody tr td.h{background:#FFF7EB;}
+#page_content .data table tbody tr td.l{text-align:left;}
+#page_content .data table tbody tr td.c{text-align:center;}
+#page_content .data table tbody tr td a{color:#37D;}
+#page_content .data table tbody tr td a:hover{color:#F60;}
+#page_content .data .simplification{display:none;position:absolute;z-index:1;padding:3px 6px 3px 3px;background:#DDD;font:12px/1.5 SimSun;color:#333;cursor:pointer;user-select:none;}
+
+#page_content .change_page{clear:both;height:auto;margin:20px 0;font:14px/22px Verdana;text-align:center;}
+#page_content .change_page a{display:inline-block;margin:0 3px;padding:0 6px;border-radius:6px;color:#18D;}
+#page_content .change_page a:hover{background:#F60;color:#FFF;text-decoration:none;}
+#page_content .change_page a.current{background:#F90;font-weight:bold;color:#FFF;}
+#page_content .change_page a.current:hover{background:#F60;color:#FFF;}

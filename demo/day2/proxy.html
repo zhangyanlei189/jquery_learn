@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../lib/jquery-2.03.my.js"></script>
+</head>
+<body>
+<script>
+    var objPerson = {
+        name: "John Doe",
+        age: 32,
+        test: function(){
+            $("p").after("Name: " + this.name + "<br> Age: " + this.age);
+        }
+    };
+    var fn = $.proxy(objPerson,"test");
+    console.log(fn());
+
+    /*function mm(a,b){
+        a = 3;
+        console.log(arguments);//arguments 可以被修改
+    }
+
+    mm(1,2);*/
+
+
+</script>
+</body>
+</html>

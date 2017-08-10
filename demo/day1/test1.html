@@ -22,9 +22,17 @@
     }*/
 
 
-    var a = $("div").slice(0,2);
-    console.log(a);
+    /*var a = $("div").slice(0,2);
+    console.log(a);*/
 
+
+
+    var a = [1,2,3,4,5,6],b=[4,5,6];
+//    var c = $.merge(a,b);
+    var c = $.grep(a,function(a,b){
+        return a>3;
+    });
+    console.log(c);
 
 </script>
 </body>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../lib/jquery-2.03.js"></script>
+</head>
+<body>
+<div id="t">
+    <ul>
+        <li class="c1">1</li>
+        <li class="c2">2</li>
+        <li class="c3">3</li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        $("#t").delegate(".c1","click",function(){
+            var a = $(this).text();
+            alert(a);
+        });
+        $("#t").delegate(".c2","mouseover",function(){
+            $(this).css("background","red");
+        });
+    });
+</script>
+</body>
+</html>

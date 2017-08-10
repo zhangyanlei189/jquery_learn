@@ -6,23 +6,13 @@
     <script src="../../lib/jquery-2.03.my.js"></script>
 </head>
 <body>
+<input type="text" id="t">
 <script>
-    var a = function(){}
-
-    $.isFunction(a);
-
-
-
-    var m = 3+3;
-
-
-    $.globalEval("alert(m)");
-
-
-    s();
-    function s(){
-        throw new Error("abbbb");
-    }
+    $(function(){
+        $("#t").on("paste",function(){
+            console.log($(this).val());
+        });
+    });
 </script>
 </body>
 </html>

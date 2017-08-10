@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>页面名称</title>
+<link rel="stylesheet" type="text/css" href="../css/operational_data.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/operational_data.js"></script>
+<script type="text/javascript">
+
+var menu_name="od_day_id"
+
+jQuery(function($){
+
+datetimepicker_init(function(){
+	$(".search .date").datetimepicker({timepicker:false,format:"Y-m-d",maxDate:0});
+});
+
+});
+
+</script>
+</head>
+
+<body>
+
+<div id="page_content">
+	
+	<div class="title">运营数据 - 日运营数据（2017-06-27）</div>
+
+	<div class="search">
+		<div class="name">查询</div>
+<form action="" method="get">
+	日期：<input name="date" type="text" class="date" style="width:70px;">&nbsp;
+	ID:<input name="id" type="text" style="width:120px;" placeholder="多ID间逗号分隔">&nbsp;
+	渠道：<select name="uid" style="width:120px"><option value="0">不限</option><option value="97">张磊公司4</option><option value="91">北京旋彩悦动科技有限公司</option><option value="86">张磊公司3</option><option value="83">张磊公司2</option><option value="89">张磊公司1</option><option value="87">长沙乐哈信息技术有限公司</option></select>&nbsp;
+	平台：<select name="platform" style="width:100px"><option value="0">不限</option><option value="6">北青网 (wx.ynet.com)</option><option value="4">猎豹 (xc.mydrivers.com)</option><option value="1">环球 (boardx.huanqiu.com)</option></select>&nbsp;
+	终端：<select name="terminal"><option value="0">不限</option><option value="1">PC设备</option><option value="2">移动设备</option></select>&nbsp;
+	展现：<select name="show"><option value="0">不限</option><option value="1">固定块(PC)</option><option value="2">右下悬浮(PC)</option><option value="3">对联(PC)</option><option value="4">固定块(M)</option><option value="5">底部悬浮(M)</option></select>&nbsp;
+	iframe：<select name="iframe"><option value="0">不限</option><option value="1">无权限</option><option value="2">有权限</option><option value="3">不限层</option></select>&nbsp;
+	反屏蔽：<select name="shield"><option value="0">不限</option><option value="1">有</option><option value="2">无</option></select>&nbsp;
+	状态:<select name="state"><option value="0">不限</option><option value="1">待审</option><option value="2">有效</option><option value="2">无效</option></select>&nbsp;
+	采样率:<select name="sampling"><option value="0">不限</option><option value="1">标准</option><option value="2">特殊</option></select>&nbsp;
+	监控:<select name="monitoring"><option value="0">不限</option><option value="1">有</option><option value="2">无</option></select>&nbsp;
+	<button type="submit">查询</button>
+</form>	
+	</div>
+	
+	<div class="data">
+		<div class="name">数据</div>
+
+<table>
+	<thead>
+		<tr>
+			<th rowspan="2"><a href="#">ID↓↑</a></th>
+			<th rowspan="2">状态</th>
+			<th rowspan="2" class="s bl">渠道</th>
+			<th rowspan="2" class="s">网站</th>
+			<th rowspan="2" class="s">名称</th>
+			<th rowspan="2" class="s bl">代码域名</th>
+			<th rowspan="2" class="s">展现平台</th>
+			<th rowspan="2" class="s bl">iframe(超)</th>
+			<th rowspan="2" class="s">反屏蔽</th>
+			<th rowspan="2" class="s bl"><a href="#">更新时间</a></th>
+			<th rowspan="2" class="s">更新人</th>
+			<th rowspan="2" class="bl">终端</th>
+			<th rowspan="2">展现</th>
+			<th rowspan="2">尺寸</th>
+			<th colspan="4" class="bl">今天昨天 o 对比</th>
+			<th colspan="6" class="bl">今天 o 数据</th>
+			<th colspan="6" class="bl">今天 h 数据</th>
+			<th colspan="7" class="bl">今天 o 错误详情</th>
+			<th colspan="7" class="bl">今天 h 错误详情</th>
+			<th colspan="7" class="bl">今天 Baidu 数据</th>
+			<th colspan="10" class="bl">今天 o h f 监控数据</th>
+			</tr>
+		<tr>
+			<th class="bl"><a href="#">今总</a></th>
+			<th><a href="#">昨总</a></th>
+			<th><a href="#">变化量</a></th>
+			<th><a href="#">变化率</a></th>
+			<th class="bl"><a href="#">总</a></th>
+			<th>抽样率</th>
+			<th><a href="#">ogl</a></th>
+			<th><a href="#">oe</a></th>
+			<th><a href="#">错误率</a></th>
+			<th><a href="#">ohttps</a></th>
+			<th class="bl"><a href="#">总</a></th>
+			<th>抽样率</th>
+			<th><a href="#">hgl</a></th>
+			<th><a href="#">he</a></th>
+			<th><a href="#">错误率</a></th>
+			<th><a href="#">ogl⇒hgl</a></th>
+			<th class="bl"><a href="#">103</a></th>
+			<th><a href="#">104</a></th>
+			<th><a href="#">105</a></th>
+			<th><a href="#">106</a></th>
+			<th><a href="#">107</a></th>
+			<th><a href="#">151</a></th>
+			<th><a href="#">152</a></th>
+			<th class="bl"><a href="#">202</a></th>
+			<th><a href="#">203</a></th>
+			<th><a href="#">204</a></th>
+			<th><a href="#">205</a></th>
+			<th><a href="#">206</a></th>
+			<th><a href="#">251</a></th>
+			<th><a href="#">252</a></th>
+			<th class="bl"><a href="#">展现</a></th>
+			<th><a href="#">点击量</a></th>
+			<th><a href="#">点击率</a></th>
+			<th><a href="#">ecpm</a></th>
+			<th><a href="#">收入</a></th>
+			<th><a href="#">点击单价</a></th>
+			<th><a href="#">hgl⇒B*g</a></th>
+			<th class="bl"><a href="#">监控率</a></th>
+			<th><a href="#">oml</a></th>
+			<th><a href="#">omu</a></th>
+			<th><a href="#">hml</a></th>
+			<th><a href="#">hmc</a></th>
+			<th><a href="#">hm点击率</a></th>
+			<th><a href="#">fpl</a></th>
+			<th><a href="#">fgb</a></th>
+			<th><a href="#">fgf</a></th>
+			<th><a href="#">fac</a></th>
+			</tr>
+		</thead>
+	<tbody>
+		<tr>
+			<td><a href="/operational_data/id_detail?uid=u3000942">u3000942</a></td>
+			<td>&radic;|&times;</td>
+			<td class="bl"><a href="/operational_data/channel_detail?cid=?">苏州l乐动时代网络科技有限公司</a></td>
+			<td><a href="/operational_data/website_detail?wid=?">www.doyo.cn</a></td>
+			<td>运营商-wap 固定位640*100</td>
+			<td class="bl"><a href="/operational_data/domain_detail?did=0">union.star-midea.cn</a></td>
+			<td><a href="/operational_data/platform_detail?pid=0">环球 (boardx.huanqiu.com)</a></td>
+			<td class="bl">Y</td>
+			<td>Y</td>
+			<td class="bl">2017-05-27 17:11:11</td>
+			<td>崔思琪</td>
+			<td class="bl">P|M</td>
+			<td>B|L|C</td>
+			<td>0*135</td>
+			<td class="bl">10000000</td>
+			<td>30000000</td>
+			<td>-20000000</td>
+			<td>-66.67%</td>
+			<td class="bl">10000000</td>
+			<td>2%</td>
+			<td>200000</td>
+			<td>30000</td>
+			<td>0.29%</td>
+			<td>0</td>
+			<td class="bl">8000000</td>
+			<td>2%</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>80.00%</td>
+			<td class="bl">10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td class="bl">10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td>10</td>
+			<td class="bl">6000000</td>
+			<td>600</td>
+			<td>0.01%</td>
+			<td>1.00</td>
+			<td>6000</td>
+			<td>10.00</td>
+			<td>75.00%</td>
+			<td class="bl">1%</td>
+			<td>100</td>
+			<td>100</td>
+			<td>100</td>
+			<td>10</td>
+			<td>10.00%</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+</table>
+
+	</div>
+	
+	<div class="change_page"><a target="_self" href="/danji/list/101?p=6" class="prev">上一页</a><a target="_self" href="/danji/list/101?p=1">1</a>...<a target="_self" href="/danji/list/101?p=5">5</a><a target="_self" href="/danji/list/101?p=6">6</a><a target="_self" href="/danji/list/101?p=7" class="active current">7</a><a target="_self" href="/danji/list/101?p=8">8</a><a target="_self" href="/danji/list/101?p=9">9</a>...<a target="_self" href="/danji/list/101?p=38">38</a><a target="_self" href="/danji/list/101?p=8" class="next">下一页</a></div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* CSS Reset */
+html,body,iframe,div,span,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,a,strong,img,form,fieldset,legend,label{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}body{line-height:1;}ul,ol{list-style:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}select,input,button{vertical-align:middle;}table{border-collapse:collapse;border-spacing:0;}html{zoom:expression(function(ele){ele.style.zoom="1";document.execCommand("BackgroundImageCache",false,true);}(this));}*html,*html body{background-image:url(about:blank);background-attachment:fixed;}
+
+/* Page */
+body{background:#F9F9F9;}
+#page_content{padding:10px 20px;margin:0 auto;width: 246px;}
+#page_content h2{text-align: center;}
+#page_content .item{padding: 0 0 0 20px;margin: 10px 0;}
+#page_content .item input{margin:4px 0 0 0;height:18px;font:12px/1.5 SimSun;color:#666;vertical-align:baseline;}
+#page_content .item input[type='submit']{display:block;width: 131px;height: 25px;margin: 16px auto;}
